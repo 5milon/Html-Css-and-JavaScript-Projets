@@ -100,10 +100,16 @@
       </nav>
       <!--Navbar End-->
       <!--Page Title Start-->
-      <section class="flex items-center gap-20 justify-around bg-[#E4F2ED] p-6 font-bold">
-        <h1 class="text-[#2B2B2D]">Register</h1>
+      <section
+        class="flex items-center gap-20 justify-around bg-[#E4F2ED] p-6 font-bold"
+      >
+        <h1 class="text-[#2B2B2D]">Login</h1>
         <div>
-          <h3 class="text-[#7A7A7A]"><span class="text-green-500"><a href="/Project-01/index.html">Home</a></span>- Register</h3>
+          <h3 class="text-[#7A7A7A]">
+            <span class="text-green-500"
+              ><a href="/Project-01/index.html">Home</a></span
+            >- Login
+          </h3>
         </div>
       </section>
 
@@ -113,28 +119,7 @@
       <section class="border rounded-md p-4 bg-white w-6/12 my-16 mx-auto">
         <img src="images/logo.png" class="mx-auto mb-8" alt="" />
         <form action="" class="grid grid-cols-2 gap-8">
-          <div class="flex flex-col">
-            <label class="font-semibold mb-2 text-zinc-600" for=""
-              >First Name*</label
-            >
-            <input
-              class="border p-2 rounded"
-              type="text"
-              placeholder="Enter Your Fisrt Name"
-            />
-          </div>
-          <div class="flex flex-col">
-            <label class="font-semibold mb-2 text-zinc-600" for=""
-              >Last Name*</label
-            >
-            <input
-              class="border p-2 rounded"
-              type="text"
-              placeholder="Enter Your Fisrt Name"
-            />
-          </div>
-
-          <div class="flex flex-col">
+          <div class="flex flex-col col-span-2">
             <label class="font-semibold mb-2 text-zinc-600" for=""
               >Email*</label
             >
@@ -144,71 +129,31 @@
               placeholder="Enter Your email"
             />
           </div>
-          <div class="flex flex-col">
-            <label class="font-semibold mb-2 text-zinc-600" for=""
-              >Phone Number*</label
-            >
-            <input
-              class="border p-2 rounded"
-              type="number"
-              placeholder="Enter Your phone number"
-            />
-          </div>
           <div class="flex flex-col col-span-2">
             <label class="font-semibold mb-2 text-zinc-600" for=""
-              >Address*</label
+              >Password*</label
             >
             <input
               class="border p-2 rounded"
-              type="text"
-              placeholder="Address"
+              type="password"
+              placeholder="Enter Your Password"
             />
+          </div>
+          <div class="flex col-span-2 items-center justify-between">
+            <div>
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-[#777777]">Remember me</label>
+            </div>
+            <a href="forgot-password.html" class="float-right text-gray-500">Forgot Password?</a>
           </div>
 
-          <div class="flex flex-col">
-            <label class="font-semibold mb-2 text-zinc-600" for="">City*</label>
-            <input class="border p-2 rounded" type="text" placeholder="City" />
-          </div>
-          <div class="flex flex-col">
-            <label class="font-semibold mb-2 text-zinc-600" for=""
-              >Post Code</label
-            >
-            <input
-              class="border p-2 rounded"
-              type="number"
-              placeholder="Post Code"
-            />
-          </div>
-
-          <div class="flex flex-col">
-            <label class="font-semibold mb-2 text-zinc-600" for=""
-              >Country*</label
-            >
-            <input
-              class="border p-2 rounded"
-              type="text"
-              placeholder="Country"
-            />
-          </div>
-          <div class="flex flex-col">
-            <label class="font-semibold mb-2 text-zinc-600" for=""
-              >Region State*</label
-            >
-            <input
-              class="border p-2 rounded"
-              type="number"
-              placeholder="Enter Your pnumber"
-            />
-          </div>
           <div class="flex col-span-2 items-center justify-between">
             <button
               class="bg-[#64B496] w-fit py-2 px-4 rounded-md text-white hover:bg-black font-semibold"
             >
-              signup
+              Login
             </button>
-            <a href="log.html" class="float-right text-gray-500"
-              >Have an account</a
-            >
+            <a href="log.html" class="float-right text-gray-500">Signup?</a>
           </div>
         </form>
       </section>

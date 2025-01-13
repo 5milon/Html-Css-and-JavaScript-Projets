@@ -1,11 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Check-Out</title>
-</head>
-<body>
-  <h1>Check Out</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Project</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <!--Top navbar code-->
+      <nav class="flex justify-around items-center py-4">
+        <img src="images/logo.png" alt="logo" />
+        <form class="flex border-2 border-indigo-600 w-5/12 rounded">
+          <input
+            name="keyword"
+            class="flex-1 px-2 rounded"
+            placeholder="Search this site"
+          />
+          <select class="py-2 px-4 border-l-2 border-indigo-600">
+            <option>All Categories</option>
+            <option value="mens">Men`s</option>
+            <option value="womens">Women`s</option>
+            <option value="electronics">Electronics</option>
+          </select>
+          <button class="bg-indigo-600 py-2 px-4 text-white">
+            <i class="ri-search-2-line"></i>
+          </button>
+        </form>
+        <div class="flex gap-6">
+          <button class="text-lg relative" id="account">
+            <i class="ri-user-line"></i>
+            Account
+            <div
+              class="flex bg-gray-50 flex-col w-[150px] absolute top-6 left-0 border text-3xl gap-2"
+              id="account-menu"
+            >
+              <a
+                class="text-sm hover:bg-gray-100 w-full text-center px-3 py-3"
+                href="register.html"
+                >Register</a
+              >
+              <a
+                class="text-sm hover:bg-gray-100 w-full text-center px-3 py-3"
+                href="checkout.html"
+                >Checkout</a
+              >
+              <a
+                class="text-sm hover:bg-gray-100 w-full text-center px-3 py-3"
+                href="log.html"
+                >Log</a
+              >
+            </div>
+          </button>
+
+          <button class="text-lg">
+            <i class="ri-heart-line"></i>
+            Wishlist
+          </button>
+
+          <button class="text-lg">
+            <i class="ri-shopping-cart-line"></i>
+            Cart
+          </button>
+        </div>
+      </nav>
+
+      <!--Main navbar code-->
+      <nav class="flex justify-around items-center py-4">
+        <button class="border text-xl w-12 h-12">
+          <i class="ri-menu-2-fill"></i>
+        </button>
+        <ul class="flex gap-12">
+          <li><a href="#" class="text-md font-semibold">Home</a></li>
+          <li><a href="#" class="text-md font-semibold">Category</a></li>
+          <li><a href="#" class="text-md font-semibold">Products</a></li>
+          <li><a href="#" class="text-md font-semibold">Blog</a></li>
+          <li><a href="#" class="text-md font-semibold">Contact</a></li>
+        </ul>
+        <select class="border py-2 px-16">
+          <option>Chicago</option>
+          <option>America</option>
+          <option>Nepal</option>
+          <option>India</option>
+          <option>Australia</option>
+        </select>
+      </nav>
+      <!--Navbar End-->
+      <!--Page Title Start-->
+      <section
+        class="flex items-center gap-20 justify-around bg-[#E4F2ED] p-6 font-bold"
+      >
+        <h1 class="text-[#2B2B2D]">Login</h1>
+        <div>
+          <h3 class="text-[#7A7A7A]">
+            <span class="text-green-500"
+              ><a href="/Project-01/index.html">Home</a></span
+            >- Login
+          </h3>
+        </div>
+      </section>
+
+      <!--Page Title End-->
+
+      <!--Register from Start-->
+      <section class="border rounded-md p-4 bg-white w-6/12 my-16 mx-auto">
+        <img src="images/logo.png" class="mx-auto mb-8" alt="" />
+        <form action="" class="grid grid-cols-2 gap-8">
+          <div class="flex flex-col col-span-2">
+            <label class="font-semibold mb-2 text-zinc-600" for=""
+              >Email*</label
+            >
+            <input
+              class="border p-2 rounded"
+              type="email"
+              placeholder="Enter Your email"
+            />
+          </div>
+          <div class="flex flex-col col-span-2">
+            <label class="font-semibold mb-2 text-zinc-600" for=""
+              >Password*</label
+            >
+            <input
+              class="border p-2 rounded"
+              type="password"
+              placeholder="Enter Your Password"
+            />
+          </div>
+          <div class="flex col-span-2 items-center justify-between">
+            <div>
+              <input type="checkbox" name="" id="" />
+              <label for="" class="text-[#777777]">Remember me</label>
+            </div>
+            <a href="forgot-password.html" class="float-right text-gray-500"
+              >Forgot Password?</a
+            >
+          </div>
+
+          <div class="flex col-span-2 items-center justify-between">
+            <button
+              class="bg-[#64B496] w-fit py-2 px-4 rounded-md text-white hover:bg-black font-semibold"
+            >
+              Login
+            </button>
+            <a href="log.html" class="float-right text-gray-500">Signup?</a>
+          </div>
+        </form>
+      </section>
+      <!--Register from End-->
+
+      <!--Footer Start-->
+      <footer class="bg-[#F7F7F8] px-24 py-16 flex flex-col">
+        <div class="flex gap-12">
+          <div class="space-y-5 w-[350px]">
+            <div>
+              <img src="images/logo.png" />
+              <p class="text-zinc-600 mt-4">
+                Carrot is the biggest market of grocery products. Get your daily
+                needs from our store.
+              </p>
+            </div>
+            <div class="flex gap-2 text-gray-500">
+              <i class="ri-map-pin-line"></i>
+              <address>
+                51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783,
+                USA.
+              </address>
+            </div>
+
+            <div class="flex gap-2 text-gray-500">
+              <i class="ri-mail-send-line"></i>
+              <p>example@email.com</p>
+            </div>
+
+            <div class="flex gap-2 text-gray-500">
+              <i class="ri-phone-line"></i>
+              <p>+91 123 4567890</p>
+            </div>
+          </div>
+
+          <div class="flex-1">
+            <h4 class="font-semibold text-2xl">Company</h4>
+            <ul class="mt-4 space-y-3">
+              <li><a href="#" class="text-md text-gray-500">About Us</a></li>
+              <li>
+                <a href="#" class="text-md text-gray-500">Daily Information</a>
+              </li>
+              <li>
+                <a href="#" class="text-md text-gray-500">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-md text-gray-500">Terms & Conditions</a>
+              </li>
+              <li><a href="#" class="text-md text-gray-500">Contact Us</a></li>
+              <li>
+                <a href="#" class="text-md text-gray-500">Support Center</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex-1">
+            <h4 class="font-semibold text-2xl">Category</h4>
+            <ul class="mt-4 space-y-3">
+              <li>
+                <a href="#" class="text-md text-gray-500">Fashion & Clothes</a>
+              </li>
+              <li>
+                <a href="#" class="text-md text-gray-500">Dairy & Bakery</a>
+              </li>
+              <li>
+                <a href="#" class="text-md text-gray-500">Fruits & Vegetable</a>
+              </li>
+              <li>
+                <a href="#" class="text-md text-gray-500">Snack & Spice</a>
+              </li>
+              <li>
+                <a href="#" class="text-md text-gray-500">Juice & Drinks</a>
+              </li>
+              <li><a href="#" class="text-md text-gray-500">Fast Food</a></li>
+            </ul>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="font-semibold text-2xl">Newsletter</h4>
+
+            <div>
+              <p class="text-gray-500 mb-1">Subscribe to get in touch.</p>
+              <form autocomplete="off" class="relative w-[350px]">
+                <input
+                  name="email"
+                  type="email"
+                  required="true"
+                  class="border w-full p-2.5 rounded"
+                  placeholder="Email"
+                />
+                <button class="absolute top-0 right-2 p-2.5" type="submit">
+                  <i class="ri-send-plane-fill"></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="flex gap-2 items-center">
+              <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                <i class="ri-facebook-line"></i>
+              </a>
+
+              <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                <i class="ri-twitter-x-line"></i>
+              </a>
+
+              <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                <i class="ri-linkedin-line"></i>
+              </a>
+
+              <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+
+            <div class="flex gap-3">
+              <a href="#">
+                <img src="images/android.png" class="rounded-md" width="150" />
+              </a>
+              <a href="#">
+                <img src="images/apple.png" class="rounded-md" width="150" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-8 mb-4" />
+
+        <div class="flex items-center justify-between">
+          <p>© 2024 Carrot, All rights reserved.</p>
+          <div>
+            <img src="images/payment.png" />
+          </div>
+        </div>
+      </footer>
+      <!--Footer End-->
+    </div>
+
+    <script src="/Project-01/main.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

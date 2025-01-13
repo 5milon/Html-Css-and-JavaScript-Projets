@@ -26,3 +26,6 @@ input:focus {
   height: 100%;
   object-fit: cover;
 }
+#account-menu{
+  display: none;
+}

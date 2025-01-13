@@ -44,11 +44,25 @@
           <button class="text-lg relative" id="account">
             <i class="ri-user-line"></i>
             Account
-            <div class="flex bg-gray-50 flex-col w-[150px] absolute top-6 left-0 border text-3xl  gap-2" id="account-menu">
-              <a class="text-sm hover:bg-gray-100 w-full text-center px-3 py-3" href="register.html">Register</a>
-              <a class="text-sm hover:bg-gray-100 w-full text-center px-3 py-3" href="checkout.html">Checkout</a>
-              <a class="text-sm hover:bg-gray-100 w-full text-center px-3 py-3" href="log.html">Log</a>
-
+            <div
+              class="flex flex-col w-[150px] absolute top-6 left-0 border text-3xl gap-2"
+              id="account-menu"
+            >
+              <a
+                class="text-sm hover:bg-gray-100 w-full text-center px-3 py-3"
+                href="pages/register.html"
+                >Register</a
+              >
+              <a
+                class="text-sm hover:bg-gray-100 w-full text-center px-3 py-3"
+                href="pages/checkout.html"
+                >Checkout</a
+              >
+              <a
+                class="text-sm hover:bg-gray-100 w-full text-center px-3 py-3"
+                href="pages/log.html"
+                >Log</a
+              >
             </div>
           </button>
 
@@ -85,53 +99,113 @@
         </select>
       </nav>
 
-      <!--Carousel code-->
-      <section class="py-32">
-        <div id="carousel" class="px-8">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide bg-[#F3F3F3] flex rounded-[30px]">
-                <div class="pl-24 space-y-5">
-                  <h4 class="text-xl font-bold">
-                    <span class="text-indigo-600">100%</span> Cotton Fabric
-                  </h4>
-                  <h1 class="font-bold text-6xl">Explore jeans summer sale</h1>
-                  <p class="text-slate-400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Animi nam
-                  </p>
-                  <button
-                    class="bg-indigo-600 px-4 py-2 text-white rounded font-semibold"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-                <img src="images/2.jpg" alt="2" class="relative" />
-              </div>
-              <div class="swiper-slide flex bg-[#F3F3F3] rounded-[30px]">
-                <div class="pl-24 space-y-5">
-                  <h4 class="text-xl font-bold">
-                    <span class="text-indigo-600">100%</span> Cotton Fabric
-                  </h4>
-                  <h1 class="font-bold text-6xl">Explore jeans summer sale</h1>
-                  <p class="text-slate-400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Animi nam
-                  </p>
-                  <button
-                    class="bg-indigo-600 px-4 py-2 text-white rounded font-semibold"
-                  >
-                    Shop Now
-                  </button>
-                </div>
-                <img src="images/1.jpg" alt="1" class="relative" />
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
       <!--Navbar End-->
+
+      <!--Register from Start-->
+      <section class="border rounded-md p-4 bg-white w-6/12 my-16 mx-auto">
+        <img src="images/logo.png" class="mx-auto mb-8" alt="" />
+        <form action="" class="grid grid-cols-2 gap-8">
+          <div class="flex flex-col">
+            <label class="font-semibold mb-2 text-zinc-600" for=""
+              >First Name*</label
+            >
+            <input
+              class="border p-2 rounded"
+              type="text"
+              placeholder="Enter Your Fisrt Name"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label class="font-semibold mb-2 text-zinc-600" for=""
+              >Last Name*</label
+            >
+            <input
+              class="border p-2 rounded"
+              type="text"
+              placeholder="Enter Your Fisrt Name"
+            />
+          </div>
+
+          <div class="flex flex-col">
+            <label class="font-semibold mb-2 text-zinc-600" for=""
+              >Email*</label
+            >
+            <input
+              class="border p-2 rounded"
+              type="email"
+              placeholder="Enter Your email"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label class="font-semibold mb-2 text-zinc-600" for=""
+              >Phone Number*</label
+            >
+            <input
+              class="border p-2 rounded"
+              type="number"
+              placeholder="Enter Your phone number"
+            />
+          </div>
+          <div class="flex flex-col col-span-2">
+            <label class="font-semibold mb-2 text-zinc-600" for=""
+              >Address*</label
+            >
+            <input
+              class="border p-2 rounded"
+              type="text"
+              placeholder="Address"
+            />
+          </div>
+
+          <div class="flex flex-col">
+            <label class="font-semibold mb-2 text-zinc-600" for="">City*</label>
+            <input class="border p-2 rounded" type="text" placeholder="City" />
+          </div>
+          <div class="flex flex-col">
+            <label class="font-semibold mb-2 text-zinc-600" for=""
+              >Post Code</label
+            >
+            <input
+              class="border p-2 rounded"
+              type="number"
+              placeholder="Post Code"
+            />
+          </div>
+
+          <div class="flex flex-col">
+            <label class="font-semibold mb-2 text-zinc-600" for=""
+              >Country*</label
+            >
+            <input
+              class="border p-2 rounded"
+              type="text"
+              placeholder="Country"
+            />
+          </div>
+          <div class="flex flex-col">
+            <label class="font-semibold mb-2 text-zinc-600" for=""
+              >Region State*</label
+            >
+            <input
+              class="border p-2 rounded"
+              type="number"
+              placeholder="Enter Your pnumber"
+            />
+          </div>
+          <div class="flex col-span-2 items-center justify-between">
+            <button
+              class="bg-[#64B496] w-fit py-2 px-4 rounded-md text-white hover:bg-black font-semibold"
+            >
+              signup
+            </button>
+            <a href="log.html" class="float-right text-gray-500"
+              >Have an account</a
+            >
+          </div>
+        </form>
+      </section>
+
+      <!--Register from End-->
 
       <!--Footer Start-->
 
@@ -267,17 +341,9 @@
       <!--Footer End-->
     </div>
 
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/Project-01/main.js"></script>
 
     <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

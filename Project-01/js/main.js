@@ -25,6 +25,7 @@ window.onload = () => {
    const cartList = document.getElementById("cart-list");
    cartList.style.animation = "cartlistcolose 0.4s linear forwards";
    const overlay = document.getElementById("cart-overlay");
-   overlay.classList = "animate__animated animate__fadeOut";
+  //  overlay.classList = "animate__animated animate__fadeOut";
+   overlay.style.display = "none";
   };
 };

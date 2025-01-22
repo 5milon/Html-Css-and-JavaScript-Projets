@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce Project</title>
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/wishlist.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -73,13 +74,12 @@
             </button>
           </a>
 
-          <button class="text-lg">
+          <button class="text-lg" id="cart">
             <i class="ri-shopping-cart-line"></i>
             Cart
           </button>
         </div>
       </nav>
-
       <!--Main navbar code-->
       <nav class="flex justify-around items-center py-4">
         <button class="border text-xl w-12 h-12">
@@ -101,6 +101,7 @@
         </select>
       </nav>
       <!--Navbar End-->
+
       <!--Page Title Start-->
       <section
         class="flex items-center gap-20 justify-around bg-[#E4F2ED] p-6 font-bold"
@@ -117,11 +118,225 @@
       <!--Page Title End-->
 
       <!--Checkout from Start-->
-      <section class="w-10/12 mx-auto my-20 gap-2 grid grid-cols-5">
-        <div class="col-span-2 bg-black">1</div>
-        <div class="col-span-3 bg-green-500">2</div>
-      </section>
+      <section class="w-10/12 mx-auto my-20 flex gap-8">
+        <div class="w-[400px]">
+          <div class="flex flex-col gap-8">
+            <div class="p-5 p-5 space-y-2 rounded border">
+              <div class="space-y-3">
+                <h1 class="text-xl font-semibold">Summary</h1>
+                <div class="flex justify-between">
+                  <label for="" class="text-gray-500">Sub-Total</label>
+                  <label for="" class="font-semibold">$80.00</label>
+                </div>
+                <div class="flex justify-between">
+                  <label for="" class="text-gray-500">Delivery Charges</label>
+                  <label for="" class="font-semibold">$80.00</label>
+                </div>
+              </div>
+              <div class="border h-[1px] border-gray-200"></div>
+              <div class="flex justify-between">
+                <label for="" class="font-bold">Total Amount</label>
+                <label for="" class="font-semibold">$80.00</label>
+              </div>
+              <div class="flex gap-4">
+                <img src="images/ch1.jpg" width="80px" alt="" />
+                <div>
+                  <label for="">Dates Value Pack Pouch</label>
+                  <div class="text-amber-500">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div>
+                    <label for="" class="text-[#64B496] font-bold"
+                      >$120.25</label
+                    >
+                    <del class="text-gray-600 text-xs">$123.25</del>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <img src="images/ch2.jpg" width="80px" alt="" />
+                <div>
+                  <label for="">Dates Value Pack Pouch</label>
+                  <div class="text-amber-500">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-line"></i>
+                  </div>
+                  <div>
+                    <label for="" class="text-[#64B496] font-bold"
+                      >$120.25</label
+                    >
+                    <del class="text-gray-600 text-xs">$123.25</del>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="p-5 p-5 space-y-2 rounded border">
+              <div class="space-y-3">
+                <h1 class="text-xl font-semibold">Delivery Method</h1>
+                <p class="text-gray-500">
+                  Please select the preferred shipping method to use on this
+                  order.
+                </p>
+                <div class="flex justify-between">
+                  <div>
+                    <h3>Free Shipping</h3>
+                    <div>
+                      <input type="radio" name="rate" />
+                      <label for="">Rate</label>
+                    </div>
+                  </div>
+                  <div>
+                    <h3>Flat Rate</h3>
+                    <div>
+                      <div>
+                        <input name="rate" type="radio" />
+                        <label for="">Rate</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h3>Add Comments About Your Order</h3>
+                  <textarea
+                    class="h-24 w-full border p-4"
+                    name="comments"
+                    placeholder="Comments"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-5 p-5 space-y-2 rounded border">
+              <div class="space-y-3">
+                <h1 class="text-xl font-semibold">Payment Method</h1>
+                <p class="text-gray-500">
+                  Please select the preferred payment method to use on this
+                  order.
+                </p>
+                <div class="flex flex-col gap-4">
+                  <div>
+                    <input type="radio" name="payment" />
+                    <label for="" class="text-gray-500">Cash On Delivery</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="payment" />
+                    <label for="" class="text-gray-500">UPI</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="payment" />
+                    <label for="" class="text-gray-500">Bank Transfer</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-5 p-5 space-y-2 rounded border">
+              <div class="space-y-3">
+                <h1 class="text-xl font-semibold">Payment Method</h1>
+                <p class="text-gray-500">
+                  Please select the preferred payment method to use on this
+                  order.
+                </p>
+                <div class="flex gap-4">
+                  <img src="images/payment.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border rounded p-6 flex-1">
+          <div class="flex flex-col gap-4">
+            <h1 class="font-semibold text-xl text-gray-900">New Customer</h1>
+
+            <h3 class="text-gray-800 text-[16px] font-semibold">
+              Checkout Options
+            </h3>
+
+            <div class="flex gap-12">
+              <div>
+                <input type="radio" name="checkout"/>
+                <label for="" name="checkout" class="text-gray-500">Register Account</label>
+              </div>
+              <div>
+                <input type="radio"name="checkout" />
+                <label for="" class="text-gray-500">Guest Account</label>
+              </div>
+            </div>
+            <p class="text-gray-500">
+              By creating an account you will be able to shop faster, be up to
+              date on an order's status, and keep track of the orders you have
+              previously made.
+            </p>
+            <div>
+              <button class="border content bg-green-300 text-white rounded py-[8px] hover:bg-black">Continue</button>
+            </div>
+
+            <h1 class="font-semibold text-xl text-gray-900">Returning Customer</h1>
+            <h3 class="text-gray-800 text-[16px] font-semibold">Email Address</h3>
+            <input type="email" class="border p-2 w-full" placeholder="Enter Your Email" />
+
+            <h3 class="text-gray-800 text-[16px] font-semibold">Password</h3>
+            <input type="password" placeholder="Enter Your Password" class="border p-2 w-full" />
+            <div >
+              <button  class="border content bg-green-300 text-white rounded py-[5px] px-[10px] hover:bg-black">Login</button>
+              <a href="#" class="px-4">Forgot Password?</a>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <h1 class="font-semibold text-xl text-gray-900">Billing Details</h1>
+            <div class="flex gap-4">
+              <input type="radio" />
+              <label for="">Ship to a different address?</label>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-1">
+                <h3>First Name</h3>
+                <input type="text" class="border p-2 w-full" />
+              </div>
+              <div class="flex-1">
+                <h3>Last Name</h3>
+                <input type="text" class="border p-2 w-full" />
+              </div>
+            </div>
+            <h3>Company Name</h3>
+            <input type="text" class="border p-2 w-full" />
+            <h3>Country</h3>
+            <select class="border p-2 w-full">
+              <option>India</option>
+              <option>USA</option>
+              <option>UK</option>
+              <option>Canada</option>
+            </select>
+            <h3>Street Address</h3>
+            <input type="text" class="border p-2 w-full" />
+            <h3>Town / City</h3>
+            <input type="text" class="border p-2 w-full" />
+            <div class="flex gap-4">
+              <div class="flex-1">
+                <h3>State / County</h3>
+                <input type="text" class="border p-2 w-full" />
+              </div>
+              <div class="flex-1">
+                <h3>Postcode / ZIP</h3>
+                <input type="text" class="border p-2 w-full" />
+              </div>
+            </div>
+            <h3>Phone</h3>
+            <input type="text" class="border p-2 w-full" />
+            <h3>Email Address</h3>
+            <input type="email" class="border p-2 w-full" />
+        </div>
+      </section>
       <!--Checkout from End-->
 
       <!--Footer Start-->
@@ -255,7 +470,135 @@
       </footer>
       <!--Footer End-->
     </div>
+    <!--Cart-->
+    <section
+      class="w-full h-full bg-black fixed top-0 left-0 bg-opacity-80 hidden"
+      id="cart-overlay"
+    >
+      <div
+        class="bg-white w-[400px] h-full absolute top-0 right-0"
+        id="cart-list"
+      >
+        <div class="flex justify-between px-2">
+          <h1 class="text-lg font-semibold">My Cart</h1>
+          <button class="text-rose-600 font-bold text-xl" id="close-cart">
+            <i class="ri-close-circle-line"></i>
+          </button>
+        </div>
+        <hr class="my-4 mx-2" />
+        <ul class="space-y-3">
+          <li>
+            <div class="flex gap-4 p-2 border-b pb-6">
+              <img src="images/cart4.jpg" class="w-[80px]" alt="" />
 
+              <div>
+                <div class="flex gap-28">
+                  <p class="text-gray-500">Fresh Pomegranate</p>
+                  <i class="ri-close-line font-awesome text-red-500"></i>
+                </div>
+                <div>
+                  <label for="" class="font-bold text-slate-500">$56.00</label>
+                  <label for="">x 1Kg</label>
+                </div>
+                <div
+                  class="flex border rounded-md w-[90px] mt-2 px-3 py-1 justify-between"
+                >
+                  <button class="text-lg increase-qnt">+</button>
+                  <label for="" class="qnt">0</label>
+                  <button class="decrease-qnt">-</button>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="flex gap-4 p-2 border-b pb-6">
+              <img src="images/cart1.jpg" class="w-[80px]" alt="" />
+
+              <div>
+                <div class="flex gap-40">
+                  <p class="text-gray-500">Green Apples</p>
+                  <i class="ri-close-line font-awesome text-red-500"></i>
+                </div>
+                <div>
+                  <label for="" class="font-bold text-slate-500">$76.00</label>
+                  <label for="">x 1Kg</label>
+                </div>
+                <div
+                  class="flex border rounded-md w-[90px] mt-2 px-3 py-1 justify-between"
+                >
+                  <button class="text-lg increase-qnt">+</button>
+                  <label for="" class="qnt">0</label>
+                  <button class="decrease-qnt">-</button>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="flex gap-4 p-2 border-b pb-6">
+              <img src="images/w4.jpg" class="w-[80px]" alt="" />
+
+              <div>
+                <div class="flex gap-28">
+                  <p class="text-gray-500">Watermelon - Small</p>
+                  <i class="ri-close-line font-awesome text-red-500"></i>
+                </div>
+                <div>
+                  <label for="" class="font-bold text-slate-500">$48.00</label>
+                  <label for="">x 1Kg</label>
+                </div>
+                <div
+                  class="flex border rounded-md w-[90px] mt-2 px-3 py-1 justify-between"
+                >
+                  <button class="text-lg increase-qnt">+</button>
+                  <label for="" class="qnt">0</label>
+                  <button class="decrease-qnt">-</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pt-40">
+            <div class="space-y-6">
+              <div class="flex justify-around">
+                <label for="" class="text-slate-800 font-semibold"
+                  >Sub-Total :</label
+                >
+                <label for="" class="font-bold">$300.00</label>
+              </div>
+
+              <div class="flex justify-around">
+                <label for="" class="text-slate-800 font-semibold"
+                  >VAT (20%) :</label
+                >
+                <label for="" class="font-bold">$300.00</label>
+              </div>
+
+              <div class="flex justify-around">
+                <label for="" class="text-slate-800 font-semibold"
+                  >Total :</label
+                >
+                <label for="" class="font-bold">$300.00</label>
+              </div>
+
+              <div class="flex justify-around">
+                <button
+                  class="bg-[#64B496] rounded text-white hover:bg-[black] px-2 py-[7px]"
+                >
+                  View Cart
+                </button>
+                <button
+                  class="hover:bg-[#64B496] px-2 py-[7px] rounded hover:text-white text-green-500 border border-green-300"
+                >
+                  Checkout
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--Cart End-->
     <script src="/Project-01/main.js"></script>
 
     <!-- Initialize Swiper -->

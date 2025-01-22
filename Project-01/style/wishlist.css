@@ -9,6 +9,9 @@
 .img-zoom:hover div{
   animation: slide 1s linear forwards;
 }
+i{
+  cursor: pointer;
+}
 @keyframes zoom {
   0% {
     transform: scale(1);
